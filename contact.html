@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اتصل بنا — مترين للاستشارات المهنية</title>
+<!-- social share card: base URL must match the live deploy -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="شركة مترين للاستشارات المهنية | 2M">
+<meta property="og:description" content="بيت استشاري مرخص ومعتمد للتقييم العقاري والفحص الهندسي ودراسات الجدوى وفق معايير التقييم الدولية (IVS) والكود السعودي للبناء (SBC).">
+<meta property="og:image" content="https://portfoliolabco.github.io/matreen-portfolio/assets/brand/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://portfoliolabco.github.io/matreen-portfolio/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://portfoliolabco.github.io/matreen-portfolio/assets/brand/og-card.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Readex+Pro:wght@200;300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#191813; --bg-deep:#100F0B; --line:#323026;
+  --ink:#EAE6DA; --ink-dim:#99937F; --white:#FBF9F2;
+  --gold:#F0C81E; --gold-dim:rgba(240,200,30,.38);
+}
+[data-theme="light"]{
+  --bg:#F5F3EA; --bg-deep:#ECE9DD; --line:#D8D4C4;
+  --ink:#3A362A; --ink-dim:#7E7864; --white:#1D1B12;
+  --gold:#9C7E0A; --gold-dim:rgba(156,126,10,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Readex Pro',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+.serif{font-family:'Amiri',serif}
+.en{font-family:'Marcellus',serif;letter-spacing:.14em}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 64px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:50}
+.logo{display:flex;align-items:baseline;gap:14px;text-decoration:none}
+.logo .mark{font-family:'Marcellus',serif;font-size:26px;color:var(--white)}
+.logo .mark b{color:var(--gold);font-weight:400}
+.logo .sub{font-size:11px;color:var(--ink-dim)}
+.nav-links{display:flex;gap:34px;font-size:13.5px;font-weight:400}
+.nav-links a{color:var(--ink);text-decoration:none}
+.nav-links a:hover,.nav-links a.act{color:var(--gold)}
+.nav-tools{display:flex;gap:10px}
+.tool-btn{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:11px;color:var(--ink-dim);background:none;cursor:pointer;font-family:inherit}
+.tool-btn svg{width:15px;height:15px;stroke:var(--ink-dim);fill:none;stroke-width:1.5}
+[data-theme="light"] .lg-dark{display:none!important}[data-theme="light"] .lg-light{display:block!important}
+#sun{display:none}[data-theme="light"] #sun{display:block}[data-theme="light"] #moon{display:none}
+
+.head{padding:88px 64px 56px;position:relative}
+.head::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--ink) 1px,transparent 1px),linear-gradient(90deg,var(--ink) 1px,transparent 1px);background-size:120px 120px;opacity:.04}
+.kicker{display:flex;align-items:center;gap:16px;color:var(--gold);font-size:13px;letter-spacing:0;word-spacing:.14em}
+.kicker::after{content:"";width:72px;height:1px;background:var(--gold-dim)}
+h1{font-family:'Amiri',serif;font-size:54px;font-weight:400;color:var(--white);margin-top:28px}
+.head p{margin-top:20px;max-width:560px;font-size:16px;line-height:2.05;color:var(--ink-dim)}
+.ruler{height:26px;margin:0 64px;border-bottom:1px solid var(--line);
+  background-image:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 24px),repeating-linear-gradient(90deg,var(--gold-dim) 0 1px,transparent 1px 120px);
+  background-size:100% 8px,100% 16px;background-position:bottom,bottom;background-repeat:no-repeat}
+
+.grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;padding:64px}
+.info .item{padding:26px 0;border-bottom:1px solid var(--line)}
+.info .item:first-child{padding-top:0}
+.info .l{font-size:12px;color:var(--gold);margin-bottom:10px;word-spacing:.1em}
+.info .v{font-size:17px;color:var(--white);line-height:1.9}
+.info .v small{display:block;font-size:13px;color:var(--ink-dim);margin-top:4px}
+.pending{border:1px dashed var(--gold-dim);color:var(--gold);font-size:12px;padding:3px 12px;display:inline-block}
+
+form{border:1px solid var(--line);padding:44px}
+form h3{font-family:'Amiri',serif;font-size:26px;font-weight:400;color:var(--white);margin-bottom:26px}
+label{display:block;font-size:12.5px;color:var(--ink-dim);margin:20px 0 8px}
+input,select,textarea{width:100%;background:transparent;border:1px solid var(--line);color:var(--ink);padding:13px 16px;font-family:inherit;font-size:14.5px;font-weight:300}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+select option{color:#3A362A}
+button[type=submit]{margin-top:30px;background:var(--gold);color:#14130C;border:none;padding:14px 40px;font-family:inherit;font-size:14.5px;font-weight:500;cursor:pointer}
+.form-note{margin-top:16px;font-size:12px;color:var(--ink-dim)}
+footer{padding:26px 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:12px;color:var(--ink-dim)}
+@media (max-width:900px){
+  nav,.head,.grid{padding-left:24px;padding-right:24px}
+  .nav-links{display:none}
+  h1{font-size:38px}
+  .grid{grid-template-columns:1fr;gap:44px}
+  .ruler{margin:0 24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html" style="display:flex;align-items:center;gap:16px">
+    <img src="assets/brand/logo-yellow.png" alt="2M" style="height:30px;width:auto;display:block" class="brandlogo lg-dark"><img src="assets/brand/logo-ink.png" alt="2M" style="height:30px;width:auto;display:none" class="brandlogo lg-light">
+    <span class="sub" style="border-right:1px solid var(--line);padding-right:16px;line-height:1.7">شركة مترين<br>للاستشارات المهنية</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">الرئيسية</a><a href="index.html#about">عن مترين</a><a href="index.html#services">خدماتنا</a><a href="index.html#method">المنهجية</a><a href="index.html#clients">عملاؤنا</a><a class="act" href="contact.html">اتصل بنا</a>
+  </div>
+  <div class="nav-tools">
+    <button class="tool-btn" title="English — قريبًا">EN</button>
+    <button class="tool-btn" id="theme-toggle" aria-label="تبديل المظهر">
+      <svg id="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="head">
+  <div class="kicker">بروتوكول التواصل</div>
+  <h1 class="serif">لنبدأ القياس.</h1>
+  <p>سواء كنت جهة تمويلية تحتاج تقييمًا ضامنًا، أو مطوّرًا يدرس جدوى مشروعه: فريقنا يستقبل طلبك ويحدد نطاق العمل خلال يوم عمل واحد.</p>
+</header>
+
+<div class="ruler"></div>
+
+<div class="grid">
+  <div class="info">
+    <div class="item"><div class="l">البريد الإلكتروني</div><div class="v" dir="ltr" style="text-align:right">info@metreen.com.sa</div></div>
+    <div class="item"><div class="l">الهاتف</div><div class="v"><span class="pending">أرقام الهواتف: بانتظار العميل</span></div></div>
+    <div class="item"><div class="l">المقر الرئيسي</div><div class="v">طريق الملك فهد، الرياض<small>المملكة العربية السعودية. تغطية ميدانية لكافة المناطق</small></div></div>
+    <div class="item"><div class="l">الموقع الإلكتروني</div><div class="v" dir="ltr" style="text-align:right">www.matreen.sa</div></div>
+    <div class="item"><div class="l">ساعات العمل</div><div class="v">الأحد إلى الخميس<small>سقف تسليم التقارير: ٤٨ ساعة من اكتمال المستندات</small></div></div>
+  </div>
+
+  <form onsubmit="event.preventDefault();alert('نموذج تجريبي — سيُفعَّل عند الإطلاق');">
+    <h3>اطلب تقييمًا معتمدًا</h3>
+    <label>الاسم / الجهة</label>
+    <input type="text" placeholder="اسم الجهة أو الشخص">
+    <label>البريد الإلكتروني</label>
+    <input type="email" placeholder="name@company.sa">
+    <label>نوع الخدمة</label>
+    <select>
+      <option>التقييم العقاري — رهن / قوائم مالية / استحواذ</option>
+      <option>الاستشارات الهندسية وفحص المباني</option>
+      <option>دراسة جدوى</option>
+      <option>دراسات وأبحاث عقارية — HBU</option>
+    </select>
+    <label>تفاصيل الطلب</label>
+    <textarea rows="4" placeholder="نوع الأصل، الموقع، الغرض من التقييم…"></textarea>
+    <button type="submit">إرسال الطلب</button>
+    <div class="form-note">نموذج تجريبي في هذه النسخة، يُفعَّل عند الإطلاق.</div>
+  </form>
+</div>
+
+<footer>
+  <span>شركة مترين للاستشارات المهنية © 2025</span>
+  <span class="en" dir="ltr">TAQEEM | IVS &nbsp;·&nbsp; info@metreen.com.sa</span>
+</footer>
+
+<script>
+const root=document.documentElement,KEY='2m-theme';
+try{const s=localStorage.getItem(KEY);if(s)root.setAttribute('data-theme',s)}catch(e){}
+document.getElementById('theme-toggle').addEventListener('click',()=>{
+  const nx=root.getAttribute('data-theme')==='light'?'dark':'light';
+  if(nx==='dark')root.removeAttribute('data-theme');else root.setAttribute('data-theme','light');
+  try{localStorage.setItem(KEY,nx==='dark'?'':'light')}catch(e){}
+});
+</script>
+</body>
+</html>
